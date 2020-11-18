@@ -27,56 +27,69 @@ function Navbar() {
     window.addEventListener('resize', showButton);
 
     return (
-        <>
-          <nav className='navbar'>
-            <div className='navbar-container'>
-            <img className='navbar-logo' src={Logo} alt="Hostingkite"></img>
-              <div className='menu-icon' onClick={handleClick}>
-                <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
-              </div>
-              <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-
-                <li className='nav-item'>
-                  <Link to='/' className='nav-links' onClick={closeMobileMenu}>
-                    Home
-                  </Link>
-                </li>
-
-                <li className='nav-item'>
-                  <Link
-                    to='/domain'
-                    className='nav-links'
-                    onClick={closeMobileMenu}
-                  >
-                    Domain
-                  </Link>
-                </li>
-
-                <li className='nav-item'>
-                  <Link
-                    to='/hosting'
-                    className='nav-links'
-                    onClick={closeMobileMenu}
-                  >
-                    Hosting
-                  </Link>
-                </li>
-    
-                <li>
-                  <Link
-                    to='/sign-in'
-                    className='nav-links-mobile'
-                    onClick={closeMobileMenu}
-                  >
-                    Sign In
-                  </Link>
-                </li>
-              </ul>
-              {button && <Button buttonStyle='btn--outline'>SIGN IN</Button>}
+      <>
+        <nav className="navbar">
+          <div className="navbar-container">
+            <img className="navbar-logo" src={Logo} alt="Hostingkite"></img>
+            <div className="menu-icon" onClick={handleClick}>
+              <i className={click ? "fas fa-times" : "fas fa-bars"} />
             </div>
-          </nav>
-        </>
-      );
+            <ul className={click ? "nav-menu active" : "nav-menu"}>
+              <li className="nav-item">
+                <a
+                  href="#hero-section"
+                  className="nav-links"
+                  onClick={closeMobileMenu}
+                >
+                  Home
+                </a>
+              </li>
+
+              <li className="nav-item">
+              <a
+                  href="#service-section"
+                  className="nav-links"
+                  onClick={closeMobileMenu}
+                >
+                  Service
+                </a>
+              </li>
+
+              <li className="nav-item">
+              <a
+                  href="#testimonial-section"
+                  className="nav-links"
+                  onClick={closeMobileMenu}
+                >
+                  Testimonial
+                </a>
+              </li>
+
+              <li className="nav-item">
+              <a
+                  href="#hosting-section"
+                  className="nav-links"
+                  onClick={closeMobileMenu}
+                >
+                  Hosting
+                </a>
+              </li>
+
+              <li>
+              <a
+                  href="#"
+                  className="nav-links-mobile"
+                  onClick={closeMobileMenu}
+                >
+                  Sign In
+                </a>
+              </li>
+            </ul>
+            {button && <Button buttonStyle="btn--outline">SIGN IN</Button>}
+          </div>
+        </nav>
+      </>
+    );
 }
 
 export default Navbar;
