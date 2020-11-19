@@ -21,7 +21,7 @@ function Testimonial () {
                         <br />
                         <span className="author-position">({item.position})</span>
                       </h6>
-                      <p className="testimonial">
+                      <p className="testimonial-detail">
                         <q>{item.testimonial}</q>
                       </p>
                     </div>

@@ -43,6 +43,10 @@ p {
     -2px -2px 2px #626262;
 }
 
+.testimonial-detail {
+    margin: 0 10px;
+}
+
 q {
     font-style: italic;
     font-size: 0.75em;
@@ -71,7 +75,7 @@ h6 {
 @media screen and (max-width: 960px) {
     .testimonial-container {
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(6, 1fr);
+        grid-template-rows: repeat(3, 1fr);
     }
     .item-testimonial {
         display: flex;

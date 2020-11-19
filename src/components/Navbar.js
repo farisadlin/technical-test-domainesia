@@ -67,7 +67,7 @@ function Navbar() {
 
               <li className="nav-item">
               <a
-                  href="#hosting-section"
+                  href="#price-section"
                   className="nav-links"
                   onClick={closeMobileMenu}
                 >

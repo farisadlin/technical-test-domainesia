@@ -1,17 +1,20 @@
 [
     {
+        "id":1,
         "author":"Lex Luthor",
         "position":"CEO of LexCorp",
         "testimonial": "I initially met HostingKite via Google. So I searched for selling hosting in Indonesia, and then I found HostingKite. I started trying it well, then I always use HostingKite until now. HostingKite is the best domain and hosting.",
         "urlAvatar": "https://i.ibb.co/yfGQM3D/lex-luthor.png"
     },
     {
+        "id":2,
         "author":"Bruce Wayne",
         "position":"CEO of Wayne Enterprise",
         "testimonial": "As long as I bought a domain or hosting at HostingKite, I haven't encountered any significant problems. Sometimes, if someone asks me to build a website, I suggest going to HostingKite to make it fast, concise, and easy.",
         "urlAvatar": "https://i.ibb.co/d5tB7xV/bruce-wayne.jpg"
     },
     {
+        "id":3,
         "author":"Tony Stark",
         "position":"CEO of Stark Industries",
         "testimonial": "I used to know HostingKite from friends. Previously, my new friend HostingKite said that he already used SSD in his hosting. After we tried it, problems rarely happened. Since then I have always used HostingKite.",

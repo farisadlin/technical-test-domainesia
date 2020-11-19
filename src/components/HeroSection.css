@@ -42,3 +42,7 @@
     border-radius: 30px;
     cursor: pointer;
 }
+
+.hero-btn:hover {
+    background-color: #B90334;
+}

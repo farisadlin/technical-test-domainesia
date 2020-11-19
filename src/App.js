@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import Services from './components/Services';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Testimonial from './components/Testimonial';
+import PriceSection from './components/PriceSection';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <HeroSection />
       <Services />
       <Testimonial />
+      <PriceSection />
     </Router>
     </>
   );
