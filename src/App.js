@@ -3,6 +3,7 @@ import HeroSection from './components/HeroSection';
 import Navbar from './components/Navbar';
 import Services from './components/Services';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Testimonial from './components/Testimonial';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Navbar />
       <HeroSection />
       <Services />
+      <Testimonial />
     </Router>
     </>
   );
