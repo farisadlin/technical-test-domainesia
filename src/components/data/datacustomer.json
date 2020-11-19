@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "name": "IBM",
+        "urlLogo": "https://i.ibb.co/gJqRy10/ibm.png"
+    },
+    {
+        "id": 2,
+        "name": "Danone",
+        "urlLogo": "https://i.ibb.co/SRt03Lx/danone.png"
+    },
+    {
+        "id": 3,
+        "name": "Amazon",
+        "urlLogo": "https://i.ibb.co/PY8zp57/amazon.png"
+    },
+    {
+        "id": 4,
+        "name": "Microsoft",
+        "urlLogo": "https://i.ibb.co/7GQvkTH/microsoft.png"
+    },
+    {
+        "id": 5,
+        "name": "H&M",
+        "urlLogo": "https://i.ibb.co/W508LzL/hnm.png"
+    },
+    {
+        "id": 6,
+        "name": "Allianz",
+        "urlLogo": "https://i.ibb.co/yQ5P54d/allianz.png"
+    }
+]

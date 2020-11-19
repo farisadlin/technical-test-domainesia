@@ -5,6 +5,7 @@ import Services from './components/Services';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Testimonial from './components/Testimonial';
 import PriceSection from './components/PriceSection';
+import CustomerSection from './components/CustomerSection';
 
 function App() {
   return (
@@ -12,9 +13,15 @@ function App() {
     <Router>
       <Navbar />
       <HeroSection />
+      {/* SplitSection */}
       <Services />
+      {/* SplitSection */}
       <Testimonial />
+      {/* SplitSection */}
       <PriceSection />
+      {/* SplitSection */}
+      <CustomerSection />
+      {/* FooterSection */}
     </Router>
     </>
   );

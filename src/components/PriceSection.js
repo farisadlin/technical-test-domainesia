@@ -19,6 +19,7 @@ function Price() {
           <hr />
         </div>
         <div className="price-container">
+          {/* Mengambil data JSON kemudian menaruh ke dalam masing-masing item gridbox */}
           {DataPricing.map((item, key) => {
             return (
               <div key={key} className="item-price">
@@ -83,23 +84,6 @@ function Price() {
               </div>
             );
           })}
-          {/* Mengambil data JSON kemudian menaruh ke dalam masing-masing item gridbox */}
-
-          {/* {DataPricing.map((item,key) => {
-                  return (
-                    <div key={key} className="item-price">
-                      <img className="author-image" alt={item.author} src={item.urlAvatar}></img>
-                      <h6 className="author-price">
-                        <span className="author-name">{item.author}</span>
-                        <br />
-                        <span className="author-position">({item.position})</span>
-                      </h6>
-                      <p className="price">
-                        <q>{item.price}</q>
-                      </p>
-                    </div>
-                  );
-              })} */}
         </div>
       </section>
     </div>
