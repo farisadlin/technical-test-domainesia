@@ -30,7 +30,7 @@ function Navbar() {
       <>
         <nav className="navbar">
           <div className="navbar-container">
-            <img className="navbar-logo" src={Logo} alt="Hostingkite"></img>
+            <img className="navbar-logo" src={Logo} alt="HostingKite"></img>
             <div className="menu-icon" onClick={handleClick}>
               <i className={click ? "fas fa-times" : "fas fa-bars"} />
             </div>

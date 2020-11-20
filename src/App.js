@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Testimonial from './components/Testimonial';
 import PriceSection from './components/PriceSection';
 import CustomerSection from './components/CustomerSection';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -21,7 +22,7 @@ function App() {
       <PriceSection />
       {/* SplitSection */}
       <CustomerSection />
-      {/* FooterSection */}
+      <Footer />
     </Router>
     </>
   );
