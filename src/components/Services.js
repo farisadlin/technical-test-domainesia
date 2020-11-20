@@ -23,8 +23,8 @@ function Services() {
                 <div className="item-circle">
                   <i class={item.urlIcon}></i>
                 </div>
-                <h6>{item.title}</h6>
-                <p>{item.desc}</p>
+                <h6 className="item-title">{item.title}</h6>
+                <p className="item-desc">{item.desc}</p>
               </div>
             );
           })}

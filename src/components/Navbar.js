@@ -13,7 +13,7 @@ function Navbar() {
     const closeMobileMenu = () => setClick(false);
 
     const showButton = () => {
-        if(window.innerWidth <= 960) {
+        if(window.innerWidth <= 1200) {
             setButton(false);
         } else {
             setButton(true);
@@ -47,7 +47,7 @@ function Navbar() {
 
               <li className="nav-item">
               <a
-                  href="#service-section"
+                  href="#services-section"
                   className="nav-links"
                   onClick={closeMobileMenu}
                 >

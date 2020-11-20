@@ -7,6 +7,9 @@ import Testimonial from './components/Testimonial';
 import PriceSection from './components/PriceSection';
 import CustomerSection from './components/CustomerSection';
 import Footer from './components/Footer';
+import SeparatorUp from './components/separator/SeparatorUp';
+import SeparatorDown from './components/separator/SeparatorDown';
+import SeparatorIntro from './components/separator/SeparatorIntro';
 
 function App() {
   return (
@@ -14,13 +17,12 @@ function App() {
     <Router>
       <Navbar />
       <HeroSection />
-      {/* SplitSection */}
       <Services />
-      {/* SplitSection */}
+      <SeparatorIntro />
+      <SeparatorUp />
       <Testimonial />
-      {/* SplitSection */}
+      <SeparatorDown />
       <PriceSection />
-      {/* SplitSection */}
       <CustomerSection />
       <Footer />
     </Router>

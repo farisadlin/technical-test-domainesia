@@ -1,7 +1,7 @@
 .navbar {
     background-image: linear-gradient(
-        rgb(0, 106, 132),
-        rgba(0, 106, 132)
+        rgb(31, 32, 68),
+        rgb(31, 32, 68)
       );
     height: 80px;
     display: flex;
@@ -72,7 +72,7 @@
     display: none;
   }
   
-  @media screen and (max-width: 960px) {
+  @media only screen and (max-width: 1200px) {
     .NavbarItems {
       position: relative;
     }
@@ -90,7 +90,7 @@
     }
   
     .nav-menu.active {
-      background: #006A84;
+      background: #1F2044;
       left: 0;
       opacity: 1;
       transition: all 0.5s ease;
@@ -111,7 +111,7 @@
     }
 
     .navbar-logo {
-        width: 400px;
+        width: 50%;
         margin: 0 35px 20px 0;
     }
   
@@ -149,5 +149,12 @@
       background: #fff;
       color: #242424;
       transition: 250ms;
+    }
+
+    @media only screen and (max-width: 600px) {
+      .navbar-logo {
+        width: 300px;
+        margin: 0 35px 20px 0;
+    }
     }
   }

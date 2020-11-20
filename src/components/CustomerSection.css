@@ -1,3 +1,7 @@
+.customer-section {
+    padding: 50px 0;
+}
+
 .title-container {
     display: flex;
     flex-flow: column wrap;
@@ -7,14 +11,6 @@
     margin: 22px auto 0 auto;
     height: 100%;
     width: 60%;
-}
-
-hr {
-    border: none;
-    height: 2px;
-    background-color: #FB3E3E;
-    padding: 0 30px;
-    margin: 20px 0;
 }
 
 .customer-container {
@@ -46,10 +42,16 @@ hr {
     -2px -2px 2px #626262;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 650px) {
     .customer-container {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
+    }
+
+    .customer-img {
+        width: 100px;
+        height: auto;
+        filter: grayscale(100%);
     }
     
 }

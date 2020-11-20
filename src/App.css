@@ -6,12 +6,23 @@
 
 body, html {
   height: 100%;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 h1 {
   font-family: 'Poppins', sans-serif;
 }
 
-p, button, h6, span, a {
+p, button, h6, span, a, ul {
   font-family: 'Rubik', sans-serif;
 }
+
+hr {
+  border: none;
+  height: 2px;
+  background-color: #FFCF00;
+  padding: 0 30px;
+  margin: 20px 0;
+}
+

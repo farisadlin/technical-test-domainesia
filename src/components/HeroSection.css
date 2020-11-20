@@ -1,7 +1,7 @@
 .hero-section {
     background-image: linear-gradient(
-        rgba(0, 106, 132, 91%),
-        rgba(0, 106, 132, 91%)
+        rgba(31, 32, 68, 91%),
+        rgba(31, 32, 68, 91%)
       ),url(../images/hero-cover.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -30,19 +30,42 @@
 .hero-desc {
     color: #fff;
     font-size: 24px;
+    font-weight: 300;
     margin: 36px 0 60px 0;
 }
 
 .hero-btn {
     font-size: 24px;
     padding: 20px 41px;
-    background-color: #FB3E3E;
-    color: #fff;
+    background-color: #FFCF00;
+    font-weight: 900;
+    color: #000;
     border: none;
     border-radius: 30px;
     cursor: pointer;
 }
 
 .hero-btn:hover {
-    background-color: #B90334;
+    background-color: #d1ab01;
+}
+
+@media screen and (max-width: 992px) {
+    .hero-btn {
+        font-size: 1em;
+    }
+
+    .hero-desc {
+        font-size: 1em;
+    }
+
+    .hero-title {
+        font-size: 2em;
+    }
+
+    .hero-container {
+        flex-flow: column wrap;
+        height: 100vh;
+        width: 80%;
+    }
+    
 }
