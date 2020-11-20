@@ -68,6 +68,11 @@
     margin-bottom: 30px;
   }
 
+  .footer-link-items a:hover {
+    color: #e9e9e9;
+    transition: 0.3s ease-out;
+}
+
   /* Social Icons */
   
   .social-media {
