@@ -9,24 +9,38 @@ function SeparatorIntro() {
         <div className="separator-intro-container">
           <div className="separator-intro-item-left">
             <h1 className="separator-title">
-              A digital web design studio creating modern & engaging online
-              experiences
+              We help, as much or as little as you'd like, with perfecting every
+              aspect of your website.
             </h1>
             <p className="separator-desc">
-              Separated they live in Bookmarksgrove right at the coast of the
-              Semantics, a large language ocean. A small river named Duden flows
-              by their place and supplies it with the necessary regelialia.
+              The point is that HostingKite covers everything you could possibly
+              need from a host. If you start with us, you’ll never need to
+              switch to someone else.
             </p>
             <ul className="separator-list">
-              <li>We put a lot of effort in design.</li>
-              <li>The most important ingredient of successful website.</li>
-              <li>Sed ut perspiciatis unde omnis iste natus error sit.</li>
-              <li>Submit Your Organization.</li>
+              <li>
+                Enjoy perfect integration with WordPress and install it in one
+                click.
+              </li>
+              <li>
+                Increase your popularity with optional SEO & marketing services.
+              </li>
+              <li>
+                Monitor your site with an integrated dashboard and included
+                analytics.
+              </li>
+              <li>Receive a FREE domain, customizable theme, and more.</li>
             </ul>
-            <button className="separator-btn">Learn More <i class="fas fa-arrow-right"></i></button>
+            <button className="separator-btn">
+              Learn More <i class="fas fa-arrow-right"></i>
+            </button>
           </div>
           <div className="separator-intro-item-right">
-            <img src={SeparatorImage} alt="separator-image" className="separator-img" />
+            <img
+              src={SeparatorImage}
+              alt="separator-image"
+              className="separator-img"
+            />
           </div>
         </div>
       </section>
