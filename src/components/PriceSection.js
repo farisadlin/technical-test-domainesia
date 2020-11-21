@@ -1,14 +1,13 @@
 import React, { useState, useEffect } from "react";
 import "./PriceSection.css";
-import DataPricing from "./data/datapricing.json";
 
-function Price() {
+function Price({data}) {
   const [domain, setDomain] = useState(null);
   const [sshAccess, setSshAccess] = useState(null);
 
   useEffect(() => {
-    setDomain(DataPricing.free_domain);
-    setSshAccess(DataPricing.ssh_access);
+    setDomain(data.free_domain);
+    setSshAccess(data.ssh_access);
   }, []);
 
   return (
@@ -20,7 +19,7 @@ function Price() {
         </div>
         <div className="price-container">
           {/* Mengambil data JSON kemudian menaruh ke dalam masing-masing item gridbox */}
-          {DataPricing.map((item, key) => {
+          {data.map((item, key) => {
             return (
               <div key={key} className="item-price">
                 <h6>{item.hosting_type}</h6>
@@ -28,7 +27,7 @@ function Price() {
                   <p className="title-price">
                     <sup>Rp</sup>{" "}
                     <span id="title-price-detail">
-                      {item.price.toLocaleString("id-ID")}
+                      {Intl.NumberFormat('id-ID').format(item.price)}
                     </span>
                   </p>
                   <p className="duration-price">per {item.duration}</p>

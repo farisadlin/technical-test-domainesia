@@ -1,8 +1,7 @@
 import React from 'react';
 import "./Testimonial.css";
-import DataTestimonials from "./data/datatestimonial.json";
 
-function Testimonial () {
+function Testimonial ({data}) {
         return (
           <div>
             <section className="testimonial-section" id="testimonial-section">
@@ -11,8 +10,8 @@ function Testimonial () {
                 <hr />
               </div>
               <div className="testimonial-container">
-              {/* Mengambil data JSON kemudian menaruh ke dalam masing-masing item gridbox */}
-              {DataTestimonials.map((item,key) => {
+              {/* Mengambil data JSON melalui API dari Contentful kemudian menaruh ke dalam masing-masing item gridbox */}
+              {data.map((item,key) => {
                   return (
                     <div key={key} className="item-testimonial">
                       <img className="author-image" alt={item.author} src={item.urlAvatar}></img>

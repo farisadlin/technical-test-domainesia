@@ -1,8 +1,7 @@
 import React from "react";
 import "./Services.css";
-import DataServices from "./data/dataservices.json";
 
-function Services() {
+function Services({data}) {
   return (
     <div>
       <section className="services-section" id="services-section">
@@ -17,7 +16,7 @@ function Services() {
         </div>
         <div className="services-container">
           {/* Mengambil data JSON kemudian menaruh ke dalam masing-masing item gridbox */}
-          {DataServices.map((item, key) => {
+          {data.map((item, key) => {
             return (
               <div key={key} className="item-services">
                 <div className="item-circle">
