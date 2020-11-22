@@ -59,21 +59,11 @@ function Navbar() {
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
               <a
-                href="#hero-section"
-                className="nav-links"
-                onClick={closeMobileMenu}
-              >
-                Home
-              </a>
-            </li>
-
-            <li className="nav-item">
-              <a
                 href="#services-section"
                 className="nav-links"
                 onClick={closeMobileMenu}
               >
-                Service
+                Hosting
               </a>
             </li>
 

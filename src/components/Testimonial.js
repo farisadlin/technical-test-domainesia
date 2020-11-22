@@ -35,7 +35,7 @@ function Testimonial ({data}) {
     <div>
       <section className="testimonial-section" id="testimonial-section">
         <div className="title-container">
-          <h1 className="testimonial-title">TESTIMONIALS</h1>
+          <h1 className="testimonial-title">OUR TESTIMONIALS</h1>
           <hr />
         </div>
         <div className="testimonial-container">{testimonialItems}</div>

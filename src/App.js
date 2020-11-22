@@ -80,7 +80,8 @@ function App() {
 
   /* NOTE: Membuat beberapa variabel baru yang di dalamnya terdapat 
     komponen yang memiliki props hasil pengambilan data dari API 
-    yang akan dirender oleh masing-masing komponen nantinya */
+    yang akan dirender oleh masing-masing komponen yang membutuhkan 
+    nantinya */
 
   const serviceSection = dataServices.map((items, id) => {
     return <Services key={id} data={items} />;
@@ -99,7 +100,7 @@ function App() {
   });
 
   return (
-    /* NOTE: Render component ke dalam bentuk UI */
+    /* NOTE: Render masing-masing component ke dalam bentuk UI */
     <>
       <Navbar />
       <HeroSection />
