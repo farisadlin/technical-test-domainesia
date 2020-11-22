@@ -54,6 +54,7 @@
     font-weight: bold;
 }
 
+/* NOTE: Tampilan responsif untuk layar perangkat mobile berukuran dari 0 hingga 992px */
 
 @media screen and (max-width: 992px) {
     .hero-btn {

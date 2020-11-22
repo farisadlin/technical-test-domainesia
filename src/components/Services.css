@@ -74,6 +74,8 @@ i.fa:hover {
     width: 60%;
 }
 
+/* NOTE: Tampilan responsif untuk layar perangkat mobile berukuran dari 540px hingga 900px */
+
 @media (min-width: 540px) and (max-width: 900px) {
     .item-desc {
         margin-bottom: 0;
@@ -95,6 +97,8 @@ i.fa:hover {
         margin-bottom: 40px;
     }
 }
+
+/* NOTE: Tampilan responsif untuk layar perangkat mobile berukuran dari 0 hingga 539px */
 
 @media (max-width: 539px) {
     .item-desc {

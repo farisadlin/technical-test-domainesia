@@ -43,6 +43,8 @@
     -2px -2px 2px #626262;
 }
 
+/* NOTE: Tampilan responsif untuk layar perangkat mobile berukuran dari 0 hingga 650px */
+
 @media screen and (max-width: 650px) {
     .customer-container {
         grid-template-columns: repeat(2, 1fr);

@@ -236,6 +236,8 @@ p {
     font-weight: 100;
 }
 
+/* NOTE: Tampilan responsif untuk layar perangkat mobile berukuran dari 0 hingga 1200px */
+
 @media screen and (max-width: 1200px) {
     .item-price {
         display: flex;

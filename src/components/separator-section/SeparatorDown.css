@@ -71,6 +71,7 @@
   text-transform: capitalize;
 }
 
+/* NOTE: Tampilan responsif untuk layar perangkat mobile berukuran dari 300px hingga 800px */
 @media (min-width: 300px) and (max-width: 800px)  {
 
   .separator-down .container {

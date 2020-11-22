@@ -71,6 +71,8 @@
   .nav-links-mobile {
     display: none;
   }
+
+/* NOTE: Tampilan responsif untuk layar perangkat mobile berukuran dari 0 hingga 1200px */
   
   @media only screen and (max-width: 1200px) {
     .NavbarItems {
@@ -150,6 +152,8 @@
       color: #242424;
       transition: 250ms;
     }
+
+/* NOTE: Tampilan responsif untuk layar perangkat mobile berukuran dari 0 hingga 600px */
 
     @media only screen and (max-width: 600px) {
       .navbar-logo {

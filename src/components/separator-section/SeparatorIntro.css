@@ -71,6 +71,9 @@
     height: 30vh;
 }
 
+/* NOTE: Tampilan responsif untuk layar perangkat mobile berukuran dari 280px hingga 768px */
+
+
 @media (min-width: 280px) and (max-width: 768px) {
     .separator-intro-container {
         grid-template-columns: repeat(1, 1fr);

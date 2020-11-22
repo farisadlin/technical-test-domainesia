@@ -80,6 +80,8 @@ q {
     margin: 0 15px;
 }
 
+/* NOTE: Tampilan responsif untuk layar perangkat mobile berukuran dari 0 hingga 1024px */
+
 @media screen and (max-width: 1024px) {
     .item-testimonial {
         display: flex;
