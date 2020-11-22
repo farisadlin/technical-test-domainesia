@@ -24,6 +24,7 @@ p {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(1, 1fr);
     align-items: center;
+    margin-top: 30px;
 }
 
 .item-testimonial {
@@ -57,10 +58,12 @@ q {
 }
 
 .author-image {
+    position: relative;
+    bottom: 50px;
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    margin-top: 20px;
+    margin: 0 0 -40px 0;
     align-self: center;
 }
 
@@ -74,13 +77,23 @@ h6 {
     .testimonial-container {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(3, 1fr);
-        margin-bottom: 60px;
+        margin: 0 0 30px 0;
     }
     .item-testimonial {
         display: flex;
         flex-flow: column wrap;
         justify-content: flex-start;
         align-items: center;
-        margin: 20px 30px 0 30px;
+        margin: 80px 30px 0 30px;
+    }
+
+    .testimonial-detail {
+        margin: 0 5px;
+    }
+    
+    q {
+        font-style: italic;
+        font-size: 0.75em;
+        margin: 0 0;
     }
 }
