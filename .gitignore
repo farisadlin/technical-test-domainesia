@@ -7,7 +7,12 @@
 
 # testing
 /coverage
+
+# API key
 .env
+
+# Folder
+/src/components/data
 
 # production
 /build

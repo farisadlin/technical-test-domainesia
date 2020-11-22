@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import "./Navbar.css";
 import Logo from "../images/white-logo.png";
 
@@ -73,7 +72,7 @@ function Navbar() {
                 className="nav-links"
                 onClick={closeMobileMenu}
               >
-                Hosting
+                Price
               </a>
             </li>
 

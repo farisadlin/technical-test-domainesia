@@ -4,11 +4,16 @@ import "./PriceSection.css";
 function Price({data}) {
   const [domain, setDomain] = useState(null);
   const [sshAccess, setSshAccess] = useState(null);
+  const [discount, setDiscount] = useState(true);
 
   useEffect(() => {
     setDomain(data.free_domain);
     setSshAccess(data.ssh_access);
   }, []);
+
+  const formatPrice = (price) => {
+    return Intl.NumberFormat('id-ID').format(price)
+  }
 
   return (
     <div>
@@ -27,7 +32,7 @@ function Price({data}) {
                   <p className="title-price">
                     <sup>Rp</sup>{" "}
                     <span id="title-price-detail">
-                      {Intl.NumberFormat('id-ID').format(item.price)}
+                      {formatPrice(item.price)}
                     </span>
                   </p>
                   <p className="duration-price">per {item.duration}</p>

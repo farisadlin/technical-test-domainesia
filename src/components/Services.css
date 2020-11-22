@@ -77,7 +77,7 @@ i.fa {
     .item-services {
         display: flex;
         flex-flow: column wrap;
-        justify-content: start;
+        justify-content: flex-start;
         align-items: center;
         margin: 20px 30px;
     }

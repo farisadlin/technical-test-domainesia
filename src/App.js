@@ -25,8 +25,6 @@ function App() {
 
   const contentful = require("contentful");
 
-  require('dotenv').config();
-
   const client = contentful.createClient({
     space: process.env.REACT_APP_SPACE_TOKEN,
     accessToken: process.env.REACT_APP_ACCESS_TOKEN,
@@ -49,29 +47,43 @@ function App() {
         setDataPricing(price);
         setDataServices(services);
         setDataTestimonial(testimonial);
-      });
+      }).catch(error => {
+        console.log(error)
+      })
   };
+
+  /* NOTE: Membuat beberapa variabel baru yang di dalamnya terdapat 
+    komponen yang memiliki props hasil pengambilan data dari API 
+    yang akan dirender oleh masing-masing komponen nantinya */
+
+  const serviceSection = dataServices.map((items, id) => {
+    return <Services key={id} data={items} />;
+  });
+
+  const testimonialSection = dataTestimonial.map((items, id) => {
+    return <Testimonial key={id} data={items} />;
+  });
+
+  const priceSection = dataPricing.map((items, id) => {
+    return <PriceSection key={id} data={items} />;
+  });
+
+  const customerSection = dataCustomer.map((items, id) => {
+    return <CustomerSection key={id} data={items} />;
+  });
 
   return (
     <>
       <Router>
         <Navbar />
         <HeroSection />
-        {dataServices.map((items, id) => {
-          return <Services key={id} data={items} />;
-        })}
+        {serviceSection}
         <SeparatorIntro />
         <SeparatorUp />
-        {dataTestimonial.map((items, id) => {
-          return <Testimonial key={id} data={items} />;
-        })}
+        {testimonialSection}
         <SeparatorDown />
-        {dataPricing.map((items, id) => {
-          return <PriceSection key={id} data={items} />;
-        })}
-        {dataCustomer.map((items, id) => {
-          return <CustomerSection key={id} data={items} />;
-        })}
+        {priceSection}
+        {customerSection}
         <Footer />
       </Router>
     </>
