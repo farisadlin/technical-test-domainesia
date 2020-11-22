@@ -36,7 +36,6 @@
   width: 50%;
 }
 
-
 .separator-up .separator-btn {
   font-size: 1em;
   padding: 15px 41px;
@@ -70,7 +69,8 @@
   text-transform: capitalize;
 }
 
-@media screen and (max-width: 960px) {
+
+@media (min-width: 300px) and (max-width: 800px) {
 
   .separator-up .container {
     flex-flow: row wrap;

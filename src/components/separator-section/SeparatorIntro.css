@@ -71,7 +71,7 @@
     height: 30vh;
 }
 
-@media only screen and (max-width: 992px) {
+@media (min-width: 280px) and (max-width: 768px) {
     .separator-intro-container {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(2, 1fr);
@@ -89,7 +89,7 @@
     }
 
     .separator-intro-item-right .separator-img {
-        height: 40vh;
+        height: 35vh;
     }
 
     .separator-intro-item-left .separator-list {
@@ -103,3 +103,4 @@
     }
 
 }
+
