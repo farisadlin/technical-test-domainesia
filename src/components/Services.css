@@ -40,6 +40,13 @@
     margin: 0 50px;
 }
 
+.item-services:hover {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in;
+}
+
 i.fa {
     display: inline-block;
     border-radius: 128px;
@@ -47,6 +54,13 @@ i.fa {
     color: #1F2044;
     padding: 0.5em;
     text-align: center;
+}
+
+i.fa:hover {
+    color: #fff;
+    background-color: #1F2044;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in;
 }
 
 .item-circle {

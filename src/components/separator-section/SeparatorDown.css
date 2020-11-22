@@ -50,7 +50,12 @@
 }
 
 .separator-down .separator-btn:hover {
-  background-color: #d1ab01;
+  background-color: #000;
+  color: #FFCF00;
+  -webkit-transform: translateY(-15px);
+  transform: translateY(-15px);
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in;
 }
 
 .separator-down .separator-desc {

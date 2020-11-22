@@ -114,10 +114,17 @@ i.far:hover .domain-policy-tooltip {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
-    margin: 20px 40px;
+    margin: 30px 40px;
     border: 1px solid #000;
     box-shadow: 2px 2px 2px #626262, 
     -2px -2px 2px #626262;
+}
+
+.item-price:hover {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in;
 }
 
 p {
@@ -149,7 +156,12 @@ p {
 }
 
 .price-btn:hover {
-    background-color: #d1ab01;
+    background-color: #000;
+    color: #FFCF00;
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in;
 }
 
 .price-container {

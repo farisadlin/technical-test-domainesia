@@ -34,6 +34,13 @@ h6 {
     -2px -2px 2px #626262;
 }
 
+.item-testimonial:hover {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in;
+}
+
 p {
     color: #8B8B8E;
     font-size: 18px;
