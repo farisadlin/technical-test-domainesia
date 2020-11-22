@@ -12,6 +12,9 @@
 .env
 /data
 
+# Netlify
+.netlify
+
 # Folder
 /src/components/data
 
