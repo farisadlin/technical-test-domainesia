@@ -8,9 +8,9 @@ import Testimonial from "./components/Testimonial";
 import PriceSection from "./components/PriceSection";
 import CustomerSection from "./components/CustomerSection";
 import Footer from "./components/Footer";
-import SeparatorUp from "./components/separator/SeparatorUp";
-import SeparatorDown from "./components/separator/SeparatorDown";
-import SeparatorIntro from "./components/separator/SeparatorIntro";
+import SeparatorUp from "./components/separator-section/SeparatorUp";
+import SeparatorDown from "./components/separator-section/SeparatorDown";
+import SeparatorIntro from "./components/separator-section/SeparatorIntro";
 import { createClient } from "contentful";
 
 function App() {

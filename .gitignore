@@ -10,6 +10,7 @@
 
 # API key
 .env
+/data
 
 # Folder
 /src/components/data
