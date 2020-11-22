@@ -4,12 +4,27 @@ import Logo from "../images/white-logo.png";
 
 import { Button } from "./Button";
 
+/* NOTE: Mengambil props berupa "data" yang diperoleh hasil
+array dari App Component */
+
 function Navbar() {
+  /* NOTE: Menentukan state yang akan digunakan menggunakan
+  React Hooks. Alasan menggunakan React Hooks dibandingkan 
+  Class-based Component, kodenya lebih efisien dan mudah dibaca
+  */
+
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
 
+  /* NOTE: Membuat fungsi tombol tutup dan buka Navigation Bar saat 
+  sedang berada di mode mobile responsive */
+
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
+
+  /* NOTE: Membuat variabel untuk menunjukkan 
+  menu Navigation Bar di mode mobile responsive
+  muncul saat lebar layar kurang dari 1200px */
 
   const showButton = () => {
     if (window.innerWidth <= 1200) {
@@ -19,13 +34,19 @@ function Navbar() {
     }
   };
 
+  /* NOTE: Mengaktivasi variabel menu Navigation Bar 
+  setelah melakukan render pada component  */
+
   useEffect(() => {
     showButton();
   }, []);
 
+  /* NOTE: Melakukan event handler saat mengecilkan layar kurang
+  dari 1200px */
   window.addEventListener("resize", showButton);
 
   return (
+    /* NOTE: Render component ke dalam bentuk UI */
     <>
       <nav className="navbar">
         <div className="navbar-container">

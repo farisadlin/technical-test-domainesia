@@ -2,6 +2,8 @@ import React from 'react';
 import './Footer.css';
 
 function Footer() {
+  /* NOTE: Render component ke dalam bentuk UI */
+
   return (
     <div className="footer-container">
       <section className="footer-section">
@@ -51,6 +53,9 @@ function Footer() {
               <a href="#">Career</a>
               <a href="#">Contact Us</a>
             </div>
+
+            {/* NOTE: Bagian Social Media Icon */}
+            
             <div className="footer-link-items">
               <h2>Social Media</h2>
               <div className="social-icons">

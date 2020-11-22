@@ -1,12 +1,37 @@
-.title-container {
+.author-image {
+    position: relative;
+    bottom: 50px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 0 -40px 0;
+    align-self: center;
+}
+
+.author-name, .author-position {
+    color: black;
+    font-weight: 900;
+}
+
+.author-position {
+    font-weight: 200;
+    font-size: 0.8em;
+}
+
+h6 {
+    font-size: 24px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.item-testimonial {
     display: flex;
     flex-flow: column wrap;
-    align-items: center;
     justify-content: center;
-    text-align: center;
-    margin: 22px auto 0 auto;
-    height: 100%;
-    width: 60%;
+    margin: 20px 40px;
+    border: 1px solid #000;
+    box-shadow: 12px 12px 12px #626262, 
+    -2px -2px 2px #626262;
 }
 
 p {
@@ -27,18 +52,19 @@ p {
     margin-top: 30px;
 }
 
-.item-testimonial {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    margin: 20px 40px;
-    border: 1px solid #000;
-    box-shadow: 12px 12px 12px #626262, 
-    -2px -2px 2px #626262;
-}
-
 .testimonial-detail {
     margin: 0 10px;
+}
+
+.title-container {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 22px auto 0 auto;
+    height: 100%;
+    width: 60%;
 }
 
 q {
@@ -47,44 +73,20 @@ q {
     margin: 0 15px;
 }
 
-.author-position {
-    font-weight: 200;
-    font-size: 0.8em;
-}
-
-.author-name, .author-position {
-    color: black;
-    font-weight: 900;
-}
-
-.author-image {
-    position: relative;
-    bottom: 50px;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin: 0 0 -40px 0;
-    align-self: center;
-}
-
-h6 {
-    font-size: 24px;
-    text-align: center;
-    margin: 20px 0;
-}
 
 @media screen and (max-width: 1024px) {
-    .testimonial-container {
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        margin: 0 0 30px 0;
-    }
     .item-testimonial {
         display: flex;
         flex-flow: column wrap;
         justify-content: flex-start;
         align-items: center;
         margin: 80px 30px 0 30px;
+    }
+    
+    .testimonial-container {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        margin: 0 0 30px 0;
     }
 
     .testimonial-detail {

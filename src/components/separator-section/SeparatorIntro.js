@@ -3,6 +3,8 @@ import './SeparatorIntro.css';
 import SeparatorImage from "../../images/separator-intro.png";
 
 function SeparatorIntro() {
+  /* NOTE: Render component ke dalam bentuk UI */
+
   return (
     <div>
       <section className="separator-intro-section">

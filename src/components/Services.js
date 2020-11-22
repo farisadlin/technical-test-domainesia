@@ -1,7 +1,28 @@
 import React from "react";
 import "./Services.css";
 
-function Services({data}) {
+/* NOTE: Mengambil props berupa "data" yang diperoleh hasil
+array dari App Component */
+
+function Services({ data }) {
+  /* NOTE: Membuat variabel baru yang di dalamnya terdapat 
+  hasil props yang akan dirender oleh masing-masing 
+  komponen nantinya */
+
+  const servicesItems = data.map((item, key) => {
+    return (
+      <div key={key} className="item-services">
+        <div className="item-circle">
+          <i class={item.urlIcon}></i>
+        </div>
+        <h6 className="item-title">{item.title}</h6>
+        <p className="item-desc">{item.desc}</p>
+      </div>
+    );
+  });
+
+  /* NOTE: Render component ke dalam bentuk UI */
+
   return (
     <div>
       <section className="services-section" id="services-section">
@@ -15,18 +36,7 @@ function Services({data}) {
           </p>
         </div>
         <div className="services-container">
-          {/* Mengambil data JSON kemudian menaruh ke dalam masing-masing item gridbox */}
-          {data.map((item, key) => {
-            return (
-              <div key={key} className="item-services">
-                <div className="item-circle">
-                  <i class={item.urlIcon}></i>
-                </div>
-                <h6 className="item-title">{item.title}</h6>
-                <p className="item-desc">{item.desc}</p>
-              </div>
-            );
-          })}
+          {servicesItems}
         </div>
       </section>
     </div>

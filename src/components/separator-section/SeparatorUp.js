@@ -2,6 +2,8 @@ import React from "react";
 import "./SeparatorUp.css";
 
 function SeparatorUp() {
+  /* NOTE: Render component ke dalam bentuk UI */
+
   return (
     <div>
       <section className="separator-up">

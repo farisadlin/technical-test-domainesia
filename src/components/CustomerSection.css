@@ -1,18 +1,3 @@
-.customer-section {
-    padding: 50px 0;
-}
-
-.title-container {
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin: 22px auto 0 auto;
-    height: 100%;
-    width: 60%;
-}
-
 .customer-container {
     display: grid;
     width: 100%;
@@ -31,6 +16,22 @@
 
 .customer-img:hover {
     filter: grayscale(0%);
+    transition: all 0.3s ease-out;
+}
+
+.customer-section {
+    padding: 50px 0;
+}
+
+.title-container {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 22px auto 0 auto;
+    height: 100%;
+    width: 60%;
 }
 
 .item-customer {

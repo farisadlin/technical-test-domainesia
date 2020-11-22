@@ -2,6 +2,8 @@ import React from "react";
 import "./SeparatorDown.css";
 
 function SeparatorDown() {
+  /* NOTE: Render component ke dalam bentuk UI */
+
   return (
     <div>
       <section className="separator-down">

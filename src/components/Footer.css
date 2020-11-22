@@ -22,6 +22,11 @@
   #footer-desc-detail-header-2 {
     margin-top: 20px
   }
+
+  .footer-line {
+    background-color: #fff;
+  }
+
   .footer-links {
     width: 100%;
     max-width: 1000px;
@@ -29,14 +34,15 @@
     justify-content: center;
   }
 
-  .footer-line {
-    background-color: #fff;
+  .footer-section {
+    margin-bottom: 30px;
   }
-  
-  .footer-link-wrapper {
-    display: flex;
+
+  .footer-section a:hover {
+    color: #e9e9e9;
+    transition: 0.3s ease-out;
   }
-  
+
   .footer-link-items {
     display: flex;
     flex-direction: column;
@@ -64,31 +70,25 @@
     margin-bottom: 0.5rem;
   }
   
-  .footer-section {
-    margin-bottom: 30px;
+  .footer-link-wrapper {
+    display: flex;
   }
 
-  .footer-section a:hover {
-    color: #e9e9e9;
-    transition: 0.3s ease-out;
-  }
-
-  /* Social Icons */
+  /* Section untuk bagian Social Icons */
   
   .social-media {
     max-width: 1000px;
     width: 100%;
   }
-  
-  .social-media-wrap {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    max-width: 1000px;
-    margin-bottom: 1rem;
-  }
 
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    flex-flow: column wrap;
+  }
+  
   .social-icon-link {
     color: #fff;
     font-size: 24px;
@@ -109,25 +109,21 @@
     transition: 0.3s ease-out;
   }
   
-  .social-icons {
+  .social-media-wrap {
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
-    flex-flow: column wrap;
+    max-width: 1000px;
+    margin-bottom: 1rem;
   }
-  
+
   .website-rights {
     color: #fff;
     margin-right: 4rem;
   }
   
   @media screen and (max-width: 600px) {
-
-    .social-icon-link-container {
-      display: flex;
-      align-items: center;
-    }
 
     .footer-copyright {
       display: table;
@@ -154,6 +150,11 @@
   
     .social-media-wrap {
       flex-direction: column;
+    }
+
+    .social-icon-link-container {
+      display: flex;
+      align-items: center;
     }
 
     .website-rights {

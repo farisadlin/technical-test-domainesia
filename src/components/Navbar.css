@@ -20,26 +20,15 @@
     height: 80px;
     max-width: 100%;
   }
-  
-  .navbar-logo {
-    width: 300px;
-    margin-bottom: 15px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
+
+  .fa-bars {
+    color: #fff;
   }
-  
-  .nav-menu {
-    display: grid;
-    grid-template-columns: repeat(4, auto);
-    grid-gap: 10px;
-    list-style: none;
-    text-align: center;
-    width: 60vw;
-    justify-content: end;
-    margin-right: 2rem;
+
+  .menu-icon {
+    display: none;
   }
-  
+
   .nav-item {
     height: 80px;
     font-family: 'Rubik', sans-serif;
@@ -54,21 +43,32 @@
     height: 100%;
     margin-top: 3px;
   }
-  
+
   .nav-links:hover {
     border-bottom: 4px solid #fff;
     transition: all 0.2s ease-out;
   }
-  
-  .fa-bars {
-    color: #fff;
+
+  .navbar-logo {
+    width: 300px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
   }
-  
+
+  .nav-menu {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 10px;
+    list-style: none;
+    text-align: center;
+    width: 60vw;
+    justify-content: end;
+    margin-right: 2rem;
+  }
+
   .nav-links-mobile {
-    display: none;
-  }
-  
-  .menu-icon {
     display: none;
   }
   
