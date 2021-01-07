@@ -94,7 +94,7 @@ function Footer() {
           </div>
         </div>
         <hr className="footer-line" />
-        <span className="footer-copyright">Copyright &#169; 2020 HostingKite Company</span>
+        <span className="footer-copyright">Copyright &#169; {new Date().getFullYear()} HostingKite Company</span>
       </section>
     </div>
   );

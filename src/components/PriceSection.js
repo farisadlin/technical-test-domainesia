@@ -81,13 +81,13 @@ function Price({ data }) {
         </div>
       );
 
-      /* NOTE: Jika paket hosting memiliki free domain maka item Gridbox akan menampilkan
+    /* NOTE: Jika paket hosting memiliki free domain maka item Gridbox akan menampilkan
       tulisan Free Domain, Term & Policy, dan SSH Access */
 
-      const isFreeDomain =
-        item.free_domain && item.ssh_access
-          ? "extra-flexbox"
-          : "extra-flexbox-hidden";
+    const isFreeDomain =
+      item.free_domain && item.ssh_access
+        ? "extra-flexbox"
+        : "extra-flexbox-hidden";
 
     /* NOTE: Render component ke dalam bentuk UI */
 
@@ -118,7 +118,7 @@ function Price({ data }) {
         </div>
         <div className={isFreeDomain}>
           <span className="text-center">
-            Free Domain {" "}
+            Free Domain{" "}
             <i class="far fa-question-circle">
               <span className="domain-policy-tooltip">
                 {item.domain_policy}
